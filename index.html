@@ -36,6 +36,25 @@
 
   *Make simple static visualisations*
 
+
+
+```vis
+   data:
+    url: data/notes.csv
+   mark: line
+   encoding:
+     x:
+       type: temporal
+       field: year
+     y:
+      type: Q
+      field: money
+     color:
+      field: denom
+      type: nominal
+```
+
+
   ```vis
   data:
     url: data/cars.csv
